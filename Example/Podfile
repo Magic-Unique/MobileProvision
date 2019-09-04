@@ -1,0 +1,15 @@
+
+
+target 'MobileProvision_Example' do
+  
+  platform :ios, '8.0'
+  pod 'MobileProvision', :path => '../'
+
+end
+
+target 'MobileProvisionCLI' do
+  pod 'MobileProvision', :path => '../'
+  
+end
+
+
