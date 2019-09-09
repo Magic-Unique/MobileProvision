@@ -33,6 +33,9 @@ static Byte NSDataGetByte(NSData *data, NSUInteger index) {
 }
 
 static NSData *NSDataRemovePrefix(NSData *data, NSUInteger length) {
+    if (data.length == 0) {
+        return data;
+    }
     NSData *result = [NSData dataWithBytes:data.bytes + length length:data.length - length];
     return result;
 }
@@ -149,7 +152,7 @@ static NSData *NSDataRemovePrefix(NSData *data, NSUInteger length) {
                         break;
                     }
                     case ASN1TagNumberInteger:
-                        while (NSDataGetByte(contentData, 0) == 0) {
+                        while (contentData.length > 0 && NSDataGetByte(contentData, 0) == 0) {
                             contentData = NSDataRemovePrefix(contentData, 1);
                         }
                         asn1obj.value = contentData;
