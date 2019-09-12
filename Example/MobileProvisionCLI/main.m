@@ -12,7 +12,7 @@
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         NSString *path = @"embedded.mobileprovision";
-        MPProvision *provision = [MPProvision mobileProvisionWithContentsOfFile:path];
+        MPProvision *provision = [MPProvision provisionWithContentsOfFile:path];
         NSLog(@"%@",provision);
     }
     return 0;

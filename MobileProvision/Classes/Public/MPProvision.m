@@ -14,16 +14,16 @@
 
 @synthesize JSON = _JSON;
 
-+ (instancetype)embeddedMobileProvision {
++ (instancetype)embeddedProvision {
     NSString *path = [NSBundle.mainBundle pathForResource:@"embedded" ofType:@"mobileprovision"];
     if (path) {
-        return [self mobileProvisionWithContentsOfFile:path];
+        return [self provisionWithContentsOfFile:path];
     } else {
         return nil;
     }
 }
 
-+ (instancetype)mobileProvisionWithContentsOfFile:(NSString *)file {
++ (instancetype)provisionWithContentsOfFile:(NSString *)file {
 	NSDictionary *JSON = [self __serializeDataWithFile:file];
 	if (!JSON) {
 		return nil;

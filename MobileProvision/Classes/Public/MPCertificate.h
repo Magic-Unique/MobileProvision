@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MPComponent.h"
 
-@interface MPValidity : NSObject
+@interface MPValidity : NSObject <MPComponent>
 
 @property (nonatomic, strong, readonly) NSDate *notBefore;
 
@@ -17,8 +17,30 @@
 
 @end
 
+@interface MPFingerprints : NSObject <MPComponent>
+
+@property (nonatomic, strong, readonly) NSString *SHA1;
+
+@property (nonatomic, strong, readonly) NSString *SHA256;
+
+@end
+
+@interface MPOrganization : NSObject <MPComponent>
+
+@property (nonatomic, strong, readonly) NSString *name;
+
+@property (nonatomic, strong, readonly) NSString *unitName;
+
+@property (nonatomic, strong, readonly) NSString *commonName;
+
+@property (nonatomic, strong, readonly) NSString *countryName;
+
+@end
+
 
 @interface MPCertificate : NSObject <MPComponent>
+
+@property (nonatomic, assign, readonly) NSInteger version;
 
 @property (nonatomic, strong, readonly) NSString *name;
 
@@ -26,17 +48,17 @@
 
 @property (nonatomic, strong, readonly) MPValidity *validity;
 
-@property (nonatomic, assign, readonly) NSInteger version;
+@property (nonatomic, strong, readonly) MPOrganization *subject;
 
-@property (nonatomic, strong, readonly) NSDictionary<NSString *, NSString *> *subjectNames;
-
-@property (nonatomic, strong, readonly) NSDictionary<NSString *, NSString *> *issuerNames;
+@property (nonatomic, strong, readonly) MPOrganization *issuer;
 
 @property (nonatomic, strong, readonly) NSData *signature;
 
 
 
 @property (nonatomic, strong, readonly) NSData *data;
+
+@property (nonatomic, strong, readonly) MPFingerprints *fingerprints;
 
 @property (nonatomic, assign, readonly) BOOL isValid;
 

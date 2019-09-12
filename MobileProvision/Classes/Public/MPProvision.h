@@ -53,7 +53,7 @@
 
  @return MPProvision
  */
-+ (instancetype)embeddedMobileProvision;
++ (instancetype)embeddedProvision;
 
 /**
  Read *.mobileprovision for specify path.
@@ -61,6 +61,6 @@
  @param file Path of *.mobileprovision
  @return MPProvision
  */
-+ (instancetype)mobileProvisionWithContentsOfFile:(NSString *)file;
++ (instancetype)provisionWithContentsOfFile:(NSString *)file;
 
 @end
