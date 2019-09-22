@@ -88,7 +88,7 @@ static NSString *MPSHA1FromData(NSData *data) {
     for(int i=0; i<CC_SHA1_DIGEST_LENGTH; i++) {
         [output appendFormat:@"%02x", digest[i]];
     }
-    return [output copy];
+    return output.uppercaseString;
 }
 
 static NSString *MPSHA256FromData(NSData *data) {
@@ -99,7 +99,7 @@ static NSString *MPSHA256FromData(NSData *data) {
     for(int i=0; i<CC_SHA256_DIGEST_LENGTH; i++) {
         [output appendFormat:@"%02x", digest[i]];
     }
-    return [output copy];
+    return output.uppercaseString;
 }
 
 @interface MPCertificate () {
@@ -124,11 +124,17 @@ static NSString *MPSHA256FromData(NSData *data) {
     _version = NSData2NSUInteger(_certificate.block1.firstLeafValue) + 1;
     _serialNumber = ({
         NSData *data = _certificate.block1.sub[X509BlockPositionSerialNumber].value;
-        NSString *serialNumber = data.description;
-        serialNumber = [serialNumber stringByReplacingOccurrencesOfString:@"<" withString:@""];
-        serialNumber = [serialNumber stringByReplacingOccurrencesOfString:@">" withString:@""];
-        serialNumber = [serialNumber stringByReplacingOccurrencesOfString:@" " withString:@""];
-        serialNumber;
+        NSMutableString *serialNumber = [NSMutableString string];
+        Byte *bytes = (Byte *)data.bytes;
+        NSString *format = @"0123456789abcdef";
+        for (NSUInteger i = 0; i < data.length; i++) {
+            Byte byte = bytes[i];
+            int high = (byte & 0xF0) >> 4;
+            int low = (byte & 0x0F);
+            [serialNumber appendFormat:@"%@", [format substringWithRange:NSMakeRange(high, 1)]];
+            [serialNumber appendFormat:@"%@", [format substringWithRange:NSMakeRange(low, 1)]];
+        }
+        [serialNumber copy];
     });
     
     _validity = [[MPValidity alloc] init];
