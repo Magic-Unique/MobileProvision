@@ -11,5 +11,6 @@
 #import "MPProvision.h"
 #import "MPEntitlements.h"
 #import "MPCertificate.h"
+#import "MPProvision+Extensions.h"
 
 #endif /* MobileProvision_h */

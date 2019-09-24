@@ -1,5 +1,5 @@
 PODS:
-  - MobileProvision (0.1.0)
+  - MobileProvision (1.0.0)
 
 DEPENDENCIES:
   - MobileProvision (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  MobileProvision: 383bec9473da805846a8f3380101cf963fd1296d
+  MobileProvision: 73179ec71db42e3adb7912eda8ee55dc0843fe68
 
-PODFILE CHECKSUM: 1d990fd7ab395323455c933678e7b0e46428570f
+PODFILE CHECKSUM: f4e82534e64956090deb064e368c9b59849da8a7
 
 COCOAPODS: 1.7.5

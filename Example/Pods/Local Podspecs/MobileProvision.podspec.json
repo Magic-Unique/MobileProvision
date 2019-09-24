@@ -1,6 +1,6 @@
 {
   "name": "MobileProvision",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "Reading *.mobileprovision file on macOS and iOS",
   "description": "MobileProvision is a tool to read *.mobileprovision file on macOS and iOS.\nIt contains mobileprovision decoding and x509 decoding(ANS1).",
   "homepage": "https://github.com/Magic-Unique/MobileProvision",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Magic-Unique/MobileProvision.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0",

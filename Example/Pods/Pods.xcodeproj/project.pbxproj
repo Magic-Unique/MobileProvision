@@ -7,38 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0BE527F2AD458EC802D915983A941DA5 /* MPCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929ACFCFA687DFDD0798AA565555C8E /* MPCertificate.m */; };
-		11259F78A4879C2A81EC7440E4D057D0 /* MobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4A7F896C0471BDB4F47669B9F3DAE0 /* MobileProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2F3763ED2D139EAA6CE4DA11CE0D7EE4 /* ASN1.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6A06E0F812310A248E4C3DAC55F69 /* ASN1.m */; };
-		322EB196049B93656AFBF0E3AC7BB59A /* ASN1Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCF8E5B97828F4E0580FEA11C7EEF /* ASN1Decoder.m */; };
-		3D0C91BE11A7741737D079EC7D8B5BC0 /* ASN1Decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C9568A72D8105C66DEEFB9DFDE88A764 /* ASN1Decoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0280740E41C17C553DF6AD039BCB1C30 /* MPComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EE8D11389CF6CFBA885250E728719A /* MPComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		03ADA4E99FB42F2D9902157F187E3301 /* ASN1Decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC2B9F21E602273D8C2539FAE85745A /* ASN1Decoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0F1673B10BF48A29492B904AEA7B6F40 /* ASN1.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DE17ED8F9D451C0737083B87E8C4CA /* ASN1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C8FD3BD0FF418B7FE7CAD5E8614ADA3 /* MPProvision+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B5C25899C6C435F713EDFD54923843 /* MPProvision+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2DBEC1B7DFBEC28225B03696AAAB2392 /* MobileProvision-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E89753498972F59F82166AF533E79991 /* MobileProvision-iOS-dummy.m */; };
+		3D2066CCD62BFE3F581445CC4CA49EBA /* MPCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51741A8E71EA1AA74A7C646963695013 /* MPCertificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		437F753E9A5E28E0BD69E056C1AD11E4 /* ASN1Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B96C71158DB4534251F8DCC0B9DCBF /* ASN1Decoder.m */; };
 		44B5060AF08E6F7A1FB9DDC89C5894D4 /* Pods-MobileProvisionCLI-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C8BC1F1A9BD8CD6AC29BDBC6CA1130A /* Pods-MobileProvisionCLI-dummy.m */; };
-		44B5EA8878FA8EEF6EA2F1F05B1C66B2 /* ASN1Decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C9568A72D8105C66DEEFB9DFDE88A764 /* ASN1Decoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4E4CB91819DA8760FB49358D91504D6E /* MPEntitlements.m in Sources */ = {isa = PBXBuildFile; fileRef = F415EBD4FF1526F4982B84CB63A65724 /* MPEntitlements.m */; };
-		564A328CE0C9C8A0616275B95136BA87 /* MPCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1929ACFCFA687DFDD0798AA565555C8E /* MPCertificate.m */; };
-		64C374CF9A0C3C3A3D6F460B84A99361 /* X509Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F1934521D5D85DA63265CE37EAE5A /* X509Certificate.m */; };
-		75289963B89C7A4FD5735EB89EEAA1E2 /* MPEntitlements.h in Headers */ = {isa = PBXBuildFile; fileRef = E759B488A8BD7AF754117925602E87AB /* MPEntitlements.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		75A5C08484BE97242CDFA06A9640A67F /* X509Certificate.h in Headers */ = {isa = PBXBuildFile; fileRef = E5434D1E8E2F520F0DC5C9B6EEE0D1A7 /* X509Certificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		79028FB81746692342DF41B2374155E5 /* ASN1.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF6A06E0F812310A248E4C3DAC55F69 /* ASN1.m */; };
-		7E6B2E3751F43AE35C7E6C31928635F0 /* MPComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F5686AE93C043DDFA530AA4B93F96755 /* MPComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7E892E0FF414AC75585CB6A99DCAD5B7 /* MPCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DA54A6F78B21363B775F80F41836F9 /* MPCertificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		7F6CC476C50EC627005FF6188A462028 /* MPCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = F6DA54A6F78B21363B775F80F41836F9 /* MPCertificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		903EFD106CD18796090879DECC096509 /* X509Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 429F1934521D5D85DA63265CE37EAE5A /* X509Certificate.m */; };
-		94CE4C538878C44C932261AF3A91E047 /* X509Certificate.h in Headers */ = {isa = PBXBuildFile; fileRef = E5434D1E8E2F520F0DC5C9B6EEE0D1A7 /* X509Certificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		AF02E27E9CA5575B53FFFCC4F86327C3 /* MPProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = B137495091802C6DA1D45446D5848745 /* MPProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B6754EE4790C275E1CC31A3C1AC5B68D /* MPComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F5686AE93C043DDFA530AA4B93F96755 /* MPComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		521B8DCB57B6E2EA60862F2F3CE376B5 /* MPComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 22EE8D11389CF6CFBA885250E728719A /* MPComponent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5C9A05B237543FE39CD329F9858A01A6 /* MobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = C4336C9A6ECD0D752330B18D7AFE451F /* MobileProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		67ABFCF538058B3B9A7DAE5D3DBE882B /* MPCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31199959FC476E0FA6B31272345671A8 /* MPCertificate.m */; };
+		6E10BE34830511DC597AD5667B39F235 /* MPCertificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31199959FC476E0FA6B31272345671A8 /* MPCertificate.m */; };
+		722F20B8F946718F6F229A6ECE41CE99 /* MPProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 1449B1FD3C3831AC4D21743A6928A54D /* MPProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		727B7A5F404F8CEC052D5B3DB81ADA76 /* X509Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3968216370B59762F47D15F19CF359CA /* X509Certificate.m */; };
+		7795D887F304DDEEB4381BE1A284FAD6 /* MPProvision+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40901F480C978BFD8897E8673227E519 /* MPProvision+Extensions.m */; };
+		8090BA9B870F7A343D60F7F44DB2E90A /* X509Certificate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3968216370B59762F47D15F19CF359CA /* X509Certificate.m */; };
+		835E81CCED9745657EB942957AB40418 /* MPProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EF5E3D28A465EA62C880A44CDEDB /* MPProvision.m */; };
+		89F161627E673A4F8610E083920540AF /* X509Certificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A2148D5BF2D2516801129AE46B6F47 /* X509Certificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8B7A8A67570941990B51D66489872635 /* X509Certificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A2148D5BF2D2516801129AE46B6F47 /* X509Certificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		968E4239D2D8AD5F4FC7F98378148CD7 /* MPProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 1449B1FD3C3831AC4D21743A6928A54D /* MPProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9A263DB4856D9C1FE69095558AD66DC6 /* ASN1.m in Sources */ = {isa = PBXBuildFile; fileRef = 16649F63260DEEBF98B62BCFFEDEEFC8 /* ASN1.m */; };
+		AD4B9AB934AC130D1C7555EA093F1045 /* ASN1.h in Headers */ = {isa = PBXBuildFile; fileRef = 19DE17ED8F9D451C0737083B87E8C4CA /* ASN1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AD871A6530838D698BA6F20A89746197 /* MPEntitlements.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDB41F30B7BB9058789098871E3247 /* MPEntitlements.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B57E26B70F92B968795B4DBB6D1C9204 /* MPCertificate.h in Headers */ = {isa = PBXBuildFile; fileRef = 51741A8E71EA1AA74A7C646963695013 /* MPCertificate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B71A96D4DDF76180EB71AF51341302C0 /* MPEntitlements.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A7C7B6337877E852D9FDE06A445C0A /* MPEntitlements.m */; };
 		BA56101AB1AFBDE73039CF86AACC5D70 /* Pods-MobileProvision_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D9A596608C3490CD0479064E67AA509 /* Pods-MobileProvision_Example-dummy.m */; };
-		CE69533F0750EB98088485725A6686AF /* MPEntitlements.h in Headers */ = {isa = PBXBuildFile; fileRef = E759B488A8BD7AF754117925602E87AB /* MPEntitlements.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D5EA83BC6CF78D515660888350FF6BE3 /* MPProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B71DB6D9314E9650467FD607FDA9929 /* MPProvision.m */; };
-		E30E622A2392BED563DB7D39BE605A00 /* MobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4A7F896C0471BDB4F47669B9F3DAE0 /* MobileProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EAF7A9470DB3A200E522C57F51B53A6B /* ASN1.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D51DA383B3CBC4C5D7D1F318AD0890 /* ASN1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EEAF784E020C03FCEF5AF5273C633F9D /* MPProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B71DB6D9314E9650467FD607FDA9929 /* MPProvision.m */; };
-		EFDBAB2FE79A04BEC999594E2CDA6143 /* MobileProvision-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 697ED0E5C01F46E20FFFF54146BEE324 /* MobileProvision-iOS-dummy.m */; };
-		F707A8451491BC49626ED4ED20557D88 /* MobileProvision-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2E8FA3113041DA36190D3AF02A174 /* MobileProvision-macOS-dummy.m */; };
-		FC3029FC5C4FF7AAE213B62461344C92 /* ASN1.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D51DA383B3CBC4C5D7D1F318AD0890 /* ASN1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FCE88998C24AA6F089D2CBA950EA0742 /* MPEntitlements.m in Sources */ = {isa = PBXBuildFile; fileRef = F415EBD4FF1526F4982B84CB63A65724 /* MPEntitlements.m */; };
-		FD84A11BAAC75BD8B2FF348AB8AC8732 /* ASN1Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2CCF8E5B97828F4E0580FEA11C7EEF /* ASN1Decoder.m */; };
-		FEC2C2EFC07864EC0C0E5C125734C17F /* MPProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = B137495091802C6DA1D45446D5848745 /* MPProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C359D97FD719886D578847B538EF4C19 /* MPProvision+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 40901F480C978BFD8897E8673227E519 /* MPProvision+Extensions.m */; };
+		CFB1DA78AD6533E88EC587B09B8E86D8 /* MPProvision.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C41EF5E3D28A465EA62C880A44CDEDB /* MPProvision.m */; };
+		DF8FB8E1F2F1758AE0FDF86B60F82118 /* ASN1Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 15B96C71158DB4534251F8DCC0B9DCBF /* ASN1Decoder.m */; };
+		E1C356B9E71B599BA1F59F4379F684E1 /* MobileProvision.h in Headers */ = {isa = PBXBuildFile; fileRef = C4336C9A6ECD0D752330B18D7AFE451F /* MobileProvision.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E2EECC91BA37BD8C1271F6BB71EC536D /* MobileProvision-macOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6564A18A1569C4453B2938DCC64D3BF2 /* MobileProvision-macOS-dummy.m */; };
+		E7ACA391B6253D442EB4D16B5ACE1112 /* ASN1.m in Sources */ = {isa = PBXBuildFile; fileRef = 16649F63260DEEBF98B62BCFFEDEEFC8 /* ASN1.m */; };
+		EA4A4CFD92D87AFC5EFD611EAFC70079 /* MPProvision+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 52B5C25899C6C435F713EDFD54923843 /* MPProvision+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F06416A3A648CF29C42C104D2580654E /* MPEntitlements.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CCDB41F30B7BB9058789098871E3247 /* MPEntitlements.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFABB2D744BC14FF4FA23962BEA2F163 /* MPEntitlements.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A7C7B6337877E852D9FDE06A445C0A /* MPEntitlements.m */; };
+		FFF79D3D39FC81AAC0ED72D597C63A7C /* ASN1Decoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FC2B9F21E602273D8C2539FAE85745A /* ASN1Decoder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,47 +63,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02A2148D5BF2D2516801129AE46B6F47 /* X509Certificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X509Certificate.h; sourceTree = "<group>"; };
+		09A7C7B6337877E852D9FDE06A445C0A /* MPEntitlements.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPEntitlements.m; sourceTree = "<group>"; };
 		0AEFE95680AA789AD7087EF6D049FC97 /* libMobileProvision-macOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMobileProvision-macOS.a"; path = "libMobileProvision-macOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0B71DB6D9314E9650467FD607FDA9929 /* MPProvision.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPProvision.m; sourceTree = "<group>"; };
 		0C8BC1F1A9BD8CD6AC29BDBC6CA1130A /* Pods-MobileProvisionCLI-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobileProvisionCLI-dummy.m"; sourceTree = "<group>"; };
 		0D9A596608C3490CD0479064E67AA509 /* Pods-MobileProvision_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MobileProvision_Example-dummy.m"; sourceTree = "<group>"; };
 		1215906EA011DD4F7B7B73C48BF291DB /* Pods-MobileProvision_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileProvision_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		1929ACFCFA687DFDD0798AA565555C8E /* MPCertificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPCertificate.m; sourceTree = "<group>"; };
+		1449B1FD3C3831AC4D21743A6928A54D /* MPProvision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPProvision.h; sourceTree = "<group>"; };
+		15B96C71158DB4534251F8DCC0B9DCBF /* ASN1Decoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASN1Decoder.m; sourceTree = "<group>"; };
+		16649F63260DEEBF98B62BCFFEDEEFC8 /* ASN1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASN1.m; sourceTree = "<group>"; };
+		19DE17ED8F9D451C0737083B87E8C4CA /* ASN1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASN1.h; sourceTree = "<group>"; };
 		1A081F0142335F30254329F98462D021 /* Pods-MobileProvisionCLI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileProvisionCLI.release.xcconfig"; sourceTree = "<group>"; };
-		1F12F76BFC2D86E7FB214D7C281A0828 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		2087D17177A5F1298C4D8AEFEE2D0572 /* MobileProvision-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "MobileProvision-macOS.xcconfig"; path = "../MobileProvision-macOS/MobileProvision-macOS.xcconfig"; sourceTree = "<group>"; };
+		22EE8D11389CF6CFBA885250E728719A /* MPComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPComponent.h; sourceTree = "<group>"; };
 		2713EF1017D92747CC2496042B2B288C /* libMobileProvision-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libMobileProvision-iOS.a"; path = "libMobileProvision-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		429F1934521D5D85DA63265CE37EAE5A /* X509Certificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = X509Certificate.m; sourceTree = "<group>"; };
-		49B2E8FA3113041DA36190D3AF02A174 /* MobileProvision-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MobileProvision-macOS-dummy.m"; path = "../MobileProvision-macOS/MobileProvision-macOS-dummy.m"; sourceTree = "<group>"; };
-		4B4A7F896C0471BDB4F47669B9F3DAE0 /* MobileProvision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MobileProvision.h; sourceTree = "<group>"; };
+		31199959FC476E0FA6B31272345671A8 /* MPCertificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPCertificate.m; sourceTree = "<group>"; };
+		335A25283D47AD3C1245BABAE1A0C0CC /* MobileProvision-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MobileProvision-macOS-prefix.pch"; path = "../MobileProvision-macOS/MobileProvision-macOS-prefix.pch"; sourceTree = "<group>"; };
+		3968216370B59762F47D15F19CF359CA /* X509Certificate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = X509Certificate.m; sourceTree = "<group>"; };
+		3CCDB41F30B7BB9058789098871E3247 /* MPEntitlements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPEntitlements.h; sourceTree = "<group>"; };
+		40901F480C978BFD8897E8673227E519 /* MPProvision+Extensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MPProvision+Extensions.m"; sourceTree = "<group>"; };
+		4609A4E6422617B7C7567DB609F574DA /* MobileProvision-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MobileProvision-iOS.xcconfig"; sourceTree = "<group>"; };
+		4C41EF5E3D28A465EA62C880A44CDEDB /* MPProvision.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPProvision.m; sourceTree = "<group>"; };
+		51741A8E71EA1AA74A7C646963695013 /* MPCertificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPCertificate.h; sourceTree = "<group>"; };
+		52B5C25899C6C435F713EDFD54923843 /* MPProvision+Extensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MPProvision+Extensions.h"; sourceTree = "<group>"; };
+		544E8FCAB16F803971EACE84DB938D95 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		598ED97FC1EF361CAF27D8A2C82F0256 /* libPods-MobileProvision_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MobileProvision_Example.a"; path = "libPods-MobileProvision_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C206FE39269A5020F6231471C841F1D /* MobileProvision-macOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MobileProvision-macOS-prefix.pch"; path = "../MobileProvision-macOS/MobileProvision-macOS-prefix.pch"; sourceTree = "<group>"; };
-		697ED0E5C01F46E20FFFF54146BEE324 /* MobileProvision-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MobileProvision-iOS-dummy.m"; sourceTree = "<group>"; };
-		6A2E164F7E1DFE7E862ABEC65DB8E6CB /* MobileProvision-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MobileProvision-iOS-prefix.pch"; sourceTree = "<group>"; };
-		7557BA597D56E349769E08E5BA38EA0B /* MobileProvision.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MobileProvision.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6564A18A1569C4453B2938DCC64D3BF2 /* MobileProvision-macOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MobileProvision-macOS-dummy.m"; path = "../MobileProvision-macOS/MobileProvision-macOS-dummy.m"; sourceTree = "<group>"; };
 		8D13F002A9B4ABC85380F93B5DA66FD2 /* Pods-MobileProvisionCLI-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MobileProvisionCLI-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F9D76FE97ED298AC40B795F16A50E28 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8FC2B9F21E602273D8C2539FAE85745A /* ASN1Decoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASN1Decoder.h; sourceTree = "<group>"; };
+		97F35D0994D4DD5AC333BE66547217E7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A21D1579AA66FB795911C409A5E404DB /* MobileProvision-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MobileProvision-iOS-prefix.pch"; sourceTree = "<group>"; };
 		A41FF0C31A22D0BB1950DEFF1A85E978 /* Pods-MobileProvisionCLI-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MobileProvisionCLI-acknowledgements.plist"; sourceTree = "<group>"; };
-		AFF6A06E0F812310A248E4C3DAC55F69 /* ASN1.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASN1.m; sourceTree = "<group>"; };
-		B137495091802C6DA1D45446D5848745 /* MPProvision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPProvision.h; sourceTree = "<group>"; };
 		B1C7567F74A8A18FF8A1F2C0D6705266 /* Pods-MobileProvision_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileProvision_Example.release.xcconfig"; sourceTree = "<group>"; };
 		B5311D8FAE45383C59EE4BA7F805A31C /* libPods-MobileProvisionCLI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MobileProvisionCLI.a"; path = "libPods-MobileProvisionCLI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9D51DA383B3CBC4C5D7D1F318AD0890 /* ASN1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASN1.h; sourceTree = "<group>"; };
-		C9568A72D8105C66DEEFB9DFDE88A764 /* ASN1Decoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ASN1Decoder.h; sourceTree = "<group>"; };
-		CE2CCF8E5B97828F4E0580FEA11C7EEF /* ASN1Decoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ASN1Decoder.m; sourceTree = "<group>"; };
-		CE6DBDE685A5D4B272EDB7A8DEF1C8BD /* MobileProvision-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "MobileProvision-iOS.xcconfig"; sourceTree = "<group>"; };
-		DBEE8FE197221ED8B09D9AC816A026C9 /* MobileProvision-macOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "MobileProvision-macOS.xcconfig"; path = "../MobileProvision-macOS/MobileProvision-macOS.xcconfig"; sourceTree = "<group>"; };
+		C4336C9A6ECD0D752330B18D7AFE451F /* MobileProvision.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MobileProvision.h; sourceTree = "<group>"; };
 		E073DBDA7A6515C5BD5E0A2622C464F3 /* Pods-MobileProvision_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MobileProvision_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E5434D1E8E2F520F0DC5C9B6EEE0D1A7 /* X509Certificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = X509Certificate.h; sourceTree = "<group>"; };
 		E56C1D7D534C1435A59D71983C71FCEF /* Pods-MobileProvision_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileProvision_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		E759B488A8BD7AF754117925602E87AB /* MPEntitlements.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPEntitlements.h; sourceTree = "<group>"; };
+		E89753498972F59F82166AF533E79991 /* MobileProvision-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MobileProvision-iOS-dummy.m"; sourceTree = "<group>"; };
 		F0A80C3E1A279B3C5945F97719AA1F4D /* Pods-MobileProvisionCLI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MobileProvisionCLI.debug.xcconfig"; sourceTree = "<group>"; };
-		F415EBD4FF1526F4982B84CB63A65724 /* MPEntitlements.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MPEntitlements.m; sourceTree = "<group>"; };
-		F5686AE93C043DDFA530AA4B93F96755 /* MPComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPComponent.h; sourceTree = "<group>"; };
-		F6DA54A6F78B21363B775F80F41836F9 /* MPCertificate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MPCertificate.h; sourceTree = "<group>"; };
+		F5577FC998D5BB0DA993EF642F8BF199 /* MobileProvision.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MobileProvision.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0F6C173A47B4354138A46E7A1B3A538F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2EE5D34BED4B745D1EA12D7595685918 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -107,14 +120,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66E48482A4C05FF07915BC4F1A07F9DD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C7C29C0AD2A895A93A145B74D49AA42A /* Frameworks */ = {
+		8F05918991EAEB1F4E2D5CFDA3BB1D02 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -134,32 +140,20 @@
 		022030040216F11C7F42C76D4F4D259F /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				03D4EE7B79D409B15708B5331B6E2C84 /* MobileProvision */,
+				A20AFE4718C452563B55215D121DEC9F /* MobileProvision */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		03D4EE7B79D409B15708B5331B6E2C84 /* MobileProvision */ = {
+		34E35C4F304FAB3FA38AA61C2708FE7F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A227489C0453BA497AD0FC43D11C10A4 /* Pod */,
-				B2131876BF6BAFDBB4E3EBD9A4B27AC9 /* Private */,
-				BF7A7AAD981ED3C96DC62F3BB9F77116 /* Public */,
-				20D11CA627A608BBE4B9C44904DFAA78 /* Support Files */,
-			);
-			name = MobileProvision;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		20D11CA627A608BBE4B9C44904DFAA78 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CE6DBDE685A5D4B272EDB7A8DEF1C8BD /* MobileProvision-iOS.xcconfig */,
-				697ED0E5C01F46E20FFFF54146BEE324 /* MobileProvision-iOS-dummy.m */,
-				6A2E164F7E1DFE7E862ABEC65DB8E6CB /* MobileProvision-iOS-prefix.pch */,
-				DBEE8FE197221ED8B09D9AC816A026C9 /* MobileProvision-macOS.xcconfig */,
-				49B2E8FA3113041DA36190D3AF02A174 /* MobileProvision-macOS-dummy.m */,
-				5C206FE39269A5020F6231471C841F1D /* MobileProvision-macOS-prefix.pch */,
+				4609A4E6422617B7C7567DB609F574DA /* MobileProvision-iOS.xcconfig */,
+				E89753498972F59F82166AF533E79991 /* MobileProvision-iOS-dummy.m */,
+				A21D1579AA66FB795911C409A5E404DB /* MobileProvision-iOS-prefix.pch */,
+				2087D17177A5F1298C4D8AEFEE2D0572 /* MobileProvision-macOS.xcconfig */,
+				6564A18A1569C4453B2938DCC64D3BF2 /* MobileProvision-macOS-dummy.m */,
+				335A25283D47AD3C1245BABAE1A0C0CC /* MobileProvision-macOS-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/MobileProvision-iOS";
@@ -176,28 +170,44 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A227489C0453BA497AD0FC43D11C10A4 /* Pod */ = {
+		7090770138EDAF670DB4509A3D4AD946 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				8F9D76FE97ED298AC40B795F16A50E28 /* LICENSE */,
-				7557BA597D56E349769E08E5BA38EA0B /* MobileProvision.podspec */,
-				1F12F76BFC2D86E7FB214D7C281A0828 /* README.md */,
+				97F35D0994D4DD5AC333BE66547217E7 /* LICENSE */,
+				F5577FC998D5BB0DA993EF642F8BF199 /* MobileProvision.podspec */,
+				544E8FCAB16F803971EACE84DB938D95 /* README.md */,
 			);
 			name = Pod;
 			sourceTree = "<group>";
 		};
-		B2131876BF6BAFDBB4E3EBD9A4B27AC9 /* Private */ = {
+		A20AFE4718C452563B55215D121DEC9F /* MobileProvision */ = {
 			isa = PBXGroup;
 			children = (
-				B9D51DA383B3CBC4C5D7D1F318AD0890 /* ASN1.h */,
-				AFF6A06E0F812310A248E4C3DAC55F69 /* ASN1.m */,
-				C9568A72D8105C66DEEFB9DFDE88A764 /* ASN1Decoder.h */,
-				CE2CCF8E5B97828F4E0580FEA11C7EEF /* ASN1Decoder.m */,
-				E5434D1E8E2F520F0DC5C9B6EEE0D1A7 /* X509Certificate.h */,
-				429F1934521D5D85DA63265CE37EAE5A /* X509Certificate.m */,
+				7090770138EDAF670DB4509A3D4AD946 /* Pod */,
+				F54A2C87AC0811216F694FD937006987 /* Private */,
+				A952D3E41D71EF64B4FECA1617AA05A7 /* Public */,
+				34E35C4F304FAB3FA38AA61C2708FE7F /* Support Files */,
 			);
-			name = Private;
-			path = MobileProvision/Classes/Private;
+			name = MobileProvision;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A952D3E41D71EF64B4FECA1617AA05A7 /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				C4336C9A6ECD0D752330B18D7AFE451F /* MobileProvision.h */,
+				51741A8E71EA1AA74A7C646963695013 /* MPCertificate.h */,
+				31199959FC476E0FA6B31272345671A8 /* MPCertificate.m */,
+				22EE8D11389CF6CFBA885250E728719A /* MPComponent.h */,
+				3CCDB41F30B7BB9058789098871E3247 /* MPEntitlements.h */,
+				09A7C7B6337877E852D9FDE06A445C0A /* MPEntitlements.m */,
+				1449B1FD3C3831AC4D21743A6928A54D /* MPProvision.h */,
+				4C41EF5E3D28A465EA62C880A44CDEDB /* MPProvision.m */,
+				52B5C25899C6C435F713EDFD54923843 /* MPProvision+Extensions.h */,
+				40901F480C978BFD8897E8673227E519 /* MPProvision+Extensions.m */,
+			);
+			name = Public;
+			path = MobileProvision/Classes/Public;
 			sourceTree = "<group>";
 		};
 		BB69BD6BE1B91A53D9E3CF5788B5BFF9 /* Pods-MobileProvisionCLI */ = {
@@ -211,22 +221,6 @@
 			);
 			name = "Pods-MobileProvisionCLI";
 			path = "Target Support Files/Pods-MobileProvisionCLI";
-			sourceTree = "<group>";
-		};
-		BF7A7AAD981ED3C96DC62F3BB9F77116 /* Public */ = {
-			isa = PBXGroup;
-			children = (
-				4B4A7F896C0471BDB4F47669B9F3DAE0 /* MobileProvision.h */,
-				F6DA54A6F78B21363B775F80F41836F9 /* MPCertificate.h */,
-				1929ACFCFA687DFDD0798AA565555C8E /* MPCertificate.m */,
-				F5686AE93C043DDFA530AA4B93F96755 /* MPComponent.h */,
-				E759B488A8BD7AF754117925602E87AB /* MPEntitlements.h */,
-				F415EBD4FF1526F4982B84CB63A65724 /* MPEntitlements.m */,
-				B137495091802C6DA1D45446D5848745 /* MPProvision.h */,
-				0B71DB6D9314E9650467FD607FDA9929 /* MPProvision.m */,
-			);
-			name = Public;
-			path = MobileProvision/Classes/Public;
 			sourceTree = "<group>";
 		};
 		C360F40136E2EB028DFF516A7C7724B3 /* Targets Support Files */ = {
@@ -269,9 +263,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F54A2C87AC0811216F694FD937006987 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				19DE17ED8F9D451C0737083B87E8C4CA /* ASN1.h */,
+				16649F63260DEEBF98B62BCFFEDEEFC8 /* ASN1.m */,
+				8FC2B9F21E602273D8C2539FAE85745A /* ASN1Decoder.h */,
+				15B96C71158DB4534251F8DCC0B9DCBF /* ASN1Decoder.m */,
+				02A2148D5BF2D2516801129AE46B6F47 /* X509Certificate.h */,
+				3968216370B59762F47D15F19CF359CA /* X509Certificate.m */,
+			);
+			name = Private;
+			path = MobileProvision/Classes/Private;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		2BBC3EDD3A03460D72033EE9A38B69AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4B9AB934AC130D1C7555EA093F1045 /* ASN1.h in Headers */,
+				03ADA4E99FB42F2D9902157F187E3301 /* ASN1Decoder.h in Headers */,
+				5C9A05B237543FE39CD329F9858A01A6 /* MobileProvision.h in Headers */,
+				3D2066CCD62BFE3F581445CC4CA49EBA /* MPCertificate.h in Headers */,
+				0280740E41C17C553DF6AD039BCB1C30 /* MPComponent.h in Headers */,
+				AD871A6530838D698BA6F20A89746197 /* MPEntitlements.h in Headers */,
+				1C8FD3BD0FF418B7FE7CAD5E8614ADA3 /* MPProvision+Extensions.h in Headers */,
+				722F20B8F946718F6F229A6ECE41CE99 /* MPProvision.h in Headers */,
+				89F161627E673A4F8610E083920540AF /* X509Certificate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54D9DD15B5F9E288F21BC690E195DA6B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,40 +303,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6F402BCCA275B1F94E9F5FD6DC5D0905 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F1673B10BF48A29492B904AEA7B6F40 /* ASN1.h in Headers */,
+				FFF79D3D39FC81AAC0ED72D597C63A7C /* ASN1Decoder.h in Headers */,
+				E1C356B9E71B599BA1F59F4379F684E1 /* MobileProvision.h in Headers */,
+				B57E26B70F92B968795B4DBB6D1C9204 /* MPCertificate.h in Headers */,
+				521B8DCB57B6E2EA60862F2F3CE376B5 /* MPComponent.h in Headers */,
+				F06416A3A648CF29C42C104D2580654E /* MPEntitlements.h in Headers */,
+				EA4A4CFD92D87AFC5EFD611EAFC70079 /* MPProvision+Extensions.h in Headers */,
+				968E4239D2D8AD5F4FC7F98378148CD7 /* MPProvision.h in Headers */,
+				8B7A8A67570941990B51D66489872635 /* X509Certificate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		797A6AB7BAD9964C4FF27F1B480F5508 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F2E51C4ED9CA169DE45069964560F7C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FC3029FC5C4FF7AAE213B62461344C92 /* ASN1.h in Headers */,
-				44B5EA8878FA8EEF6EA2F1F05B1C66B2 /* ASN1Decoder.h in Headers */,
-				11259F78A4879C2A81EC7440E4D057D0 /* MobileProvision.h in Headers */,
-				7E892E0FF414AC75585CB6A99DCAD5B7 /* MPCertificate.h in Headers */,
-				7E6B2E3751F43AE35C7E6C31928635F0 /* MPComponent.h in Headers */,
-				75289963B89C7A4FD5735EB89EEAA1E2 /* MPEntitlements.h in Headers */,
-				FEC2C2EFC07864EC0C0E5C125734C17F /* MPProvision.h in Headers */,
-				75A5C08484BE97242CDFA06A9640A67F /* X509Certificate.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		92268FBED0DD3B7A2222C33D87231466 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EAF7A9470DB3A200E522C57F51B53A6B /* ASN1.h in Headers */,
-				3D0C91BE11A7741737D079EC7D8B5BC0 /* ASN1Decoder.h in Headers */,
-				E30E622A2392BED563DB7D39BE605A00 /* MobileProvision.h in Headers */,
-				7F6CC476C50EC627005FF6188A462028 /* MPCertificate.h in Headers */,
-				B6754EE4790C275E1CC31A3C1AC5B68D /* MPComponent.h in Headers */,
-				CE69533F0750EB98088485725A6686AF /* MPEntitlements.h in Headers */,
-				AF02E27E9CA5575B53FFFCC4F86327C3 /* MPProvision.h in Headers */,
-				94CE4C538878C44C932261AF3A91E047 /* X509Certificate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,11 +349,11 @@
 		};
 		6C5A4099CE33DE7C542065598A118D2D /* MobileProvision-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 06F3EE4FEE0550601979362367A5D182 /* Build configuration list for PBXNativeTarget "MobileProvision-iOS" */;
+			buildConfigurationList = 875424E4CDB938BC3F478A3C04A0C0C2 /* Build configuration list for PBXNativeTarget "MobileProvision-iOS" */;
 			buildPhases = (
-				8F2E51C4ED9CA169DE45069964560F7C /* Headers */,
-				7E6B7BBB8F736FFB1BDC0C465DF9AC1A /* Sources */,
-				66E48482A4C05FF07915BC4F1A07F9DD /* Frameworks */,
+				2BBC3EDD3A03460D72033EE9A38B69AB /* Headers */,
+				17CA5F71EB36C138E1200B81976707B5 /* Sources */,
+				0F6C173A47B4354138A46E7A1B3A538F /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -374,11 +384,11 @@
 		};
 		CE852F2AE1B09C0C3F0F7D58C5BFC17B /* MobileProvision-macOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0BBFA321AF2976F393B836BD87B4DFF /* Build configuration list for PBXNativeTarget "MobileProvision-macOS" */;
+			buildConfigurationList = CCD1F372A0262316EFFB17EAEDCA048C /* Build configuration list for PBXNativeTarget "MobileProvision-macOS" */;
 			buildPhases = (
-				92268FBED0DD3B7A2222C33D87231466 /* Headers */,
-				2530A38CC2B87786FE52695B83BB0BBB /* Sources */,
-				C7C29C0AD2A895A93A145B74D49AA42A /* Frameworks */,
+				6F402BCCA275B1F94E9F5FD6DC5D0905 /* Headers */,
+				BF92DADEEF8ED77EC12ADC33829EEB56 /* Sources */,
+				8F05918991EAEB1F4E2D5CFDA3BB1D02 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -419,31 +429,33 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2530A38CC2B87786FE52695B83BB0BBB /* Sources */ = {
+		17CA5F71EB36C138E1200B81976707B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79028FB81746692342DF41B2374155E5 /* ASN1.m in Sources */,
-				322EB196049B93656AFBF0E3AC7BB59A /* ASN1Decoder.m in Sources */,
-				F707A8451491BC49626ED4ED20557D88 /* MobileProvision-macOS-dummy.m in Sources */,
-				0BE527F2AD458EC802D915983A941DA5 /* MPCertificate.m in Sources */,
-				4E4CB91819DA8760FB49358D91504D6E /* MPEntitlements.m in Sources */,
-				EEAF784E020C03FCEF5AF5273C633F9D /* MPProvision.m in Sources */,
-				903EFD106CD18796090879DECC096509 /* X509Certificate.m in Sources */,
+				E7ACA391B6253D442EB4D16B5ACE1112 /* ASN1.m in Sources */,
+				437F753E9A5E28E0BD69E056C1AD11E4 /* ASN1Decoder.m in Sources */,
+				2DBEC1B7DFBEC28225B03696AAAB2392 /* MobileProvision-iOS-dummy.m in Sources */,
+				6E10BE34830511DC597AD5667B39F235 /* MPCertificate.m in Sources */,
+				FFABB2D744BC14FF4FA23962BEA2F163 /* MPEntitlements.m in Sources */,
+				C359D97FD719886D578847B538EF4C19 /* MPProvision+Extensions.m in Sources */,
+				CFB1DA78AD6533E88EC587B09B8E86D8 /* MPProvision.m in Sources */,
+				727B7A5F404F8CEC052D5B3DB81ADA76 /* X509Certificate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E6B7BBB8F736FFB1BDC0C465DF9AC1A /* Sources */ = {
+		BF92DADEEF8ED77EC12ADC33829EEB56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F3763ED2D139EAA6CE4DA11CE0D7EE4 /* ASN1.m in Sources */,
-				FD84A11BAAC75BD8B2FF348AB8AC8732 /* ASN1Decoder.m in Sources */,
-				EFDBAB2FE79A04BEC999594E2CDA6143 /* MobileProvision-iOS-dummy.m in Sources */,
-				564A328CE0C9C8A0616275B95136BA87 /* MPCertificate.m in Sources */,
-				FCE88998C24AA6F089D2CBA950EA0742 /* MPEntitlements.m in Sources */,
-				D5EA83BC6CF78D515660888350FF6BE3 /* MPProvision.m in Sources */,
-				64C374CF9A0C3C3A3D6F460B84A99361 /* X509Certificate.m in Sources */,
+				9A263DB4856D9C1FE69095558AD66DC6 /* ASN1.m in Sources */,
+				DF8FB8E1F2F1758AE0FDF86B60F82118 /* ASN1Decoder.m in Sources */,
+				E2EECC91BA37BD8C1271F6BB71EC536D /* MobileProvision-macOS-dummy.m in Sources */,
+				67ABFCF538058B3B9A7DAE5D3DBE882B /* MPCertificate.m in Sources */,
+				B71A96D4DDF76180EB71AF51341302C0 /* MPEntitlements.m in Sources */,
+				7795D887F304DDEEB4381BE1A284FAD6 /* MPProvision+Extensions.m in Sources */,
+				835E81CCED9745657EB942957AB40418 /* MPProvision.m in Sources */,
+				8090BA9B870F7A343D60F7F44DB2E90A /* X509Certificate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,10 +493,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		06D7BC9AA1FB659236E8764EB1C718EB /* Release */ = {
+		1FFC007628451AEAACCA6E4BA80177BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBEE8FE197221ED8B09D9AC816A026C9 /* MobileProvision-macOS.xcconfig */;
+			baseConfigurationReference = 1A081F0142335F30254329F98462D021 /* Pods-MobileProvisionCLI.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "-";
@@ -492,78 +505,14 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				EXECUTABLE_PREFIX = lib;
-				GCC_PREFIX_HEADER = "Target Support Files/MobileProvision-macOS/MobileProvision-macOS-prefix.pch";
+				MACH_O_TYPE = staticlib;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MobileProvision;
-				PRODUCT_NAME = "MobileProvision-macOS";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Release;
-		};
-		0ED92D43107F612988F913F620B38C78 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
@@ -589,7 +538,7 @@
 			};
 			name = Release;
 		};
-		2FF964438BF880C2F7348DC189E20431 /* Debug */ = {
+		274E8F527D75316D598CBB7293B01EAE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -641,7 +590,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -654,9 +603,142 @@
 			};
 			name = Debug;
 		};
-		4F7A1F417689622432D230BD2DF77198 /* Debug */ = {
+		4112C9BE65BAE60A9BD16A98752BDDAB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DBEE8FE197221ED8B09D9AC816A026C9 /* MobileProvision-macOS.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		4AFD3D054E72BE95CC34FBBBDD61615C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4609A4E6422617B7C7567DB609F574DA /* MobileProvision-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MobileProvision-iOS/MobileProvision-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MobileProvision;
+				PRODUCT_NAME = "MobileProvision-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5A077B5FA77A587025364670DF573B0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4609A4E6422617B7C7567DB609F574DA /* MobileProvision-iOS.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/MobileProvision-iOS/MobileProvision-iOS-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = MobileProvision;
+				PRODUCT_NAME = "MobileProvision-iOS";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6C69EE66AB276F3012223FBA584D1931 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0A80C3E1A279B3C5945F97719AA1F4D /* Pods-MobileProvisionCLI.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A40C5352F9352B66F36D841B9698DFE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2087D17177A5F1298C4D8AEFEE2D0572 /* MobileProvision-macOS.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -676,52 +758,6 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-			};
-			name = Debug;
-		};
-		B61FF16E4D7C3B92F0ACE21EBBC249A8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0A80C3E1A279B3C5945F97719AA1F4D /* Pods-MobileProvisionCLI.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		CFDCFC7913C1CA554FF3B03957A7D3D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1A081F0142335F30254329F98462D021 /* Pods-MobileProvisionCLI.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "-";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				EXECUTABLE_PREFIX = lib;
-				MACH_O_TYPE = staticlib;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -746,72 +782,39 @@
 			};
 			name = Debug;
 		};
-		F1BFC487264D6CEDA5EA6218A45BA963 /* Debug */ = {
+		F1E08C845857398A62CC0F40D159020B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE6DBDE685A5D4B272EDB7A8DEF1C8BD /* MobileProvision-iOS.xcconfig */;
+			baseConfigurationReference = 2087D17177A5F1298C4D8AEFEE2D0572 /* MobileProvision-macOS.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MobileProvision-iOS/MobileProvision-iOS-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/MobileProvision-macOS/MobileProvision-macOS-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_MODULE_NAME = MobileProvision;
-				PRODUCT_NAME = "MobileProvision-iOS";
+				PRODUCT_NAME = "MobileProvision-macOS";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
+				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
-		};
-		F814FCFB1639AE3B746E083EE56A3227 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE6DBDE685A5D4B272EDB7A8DEF1C8BD /* MobileProvision-iOS.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/MobileProvision-iOS/MobileProvision-iOS-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = MobileProvision;
-				PRODUCT_NAME = "MobileProvision-iOS";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06F3EE4FEE0550601979362367A5D182 /* Build configuration list for PBXNativeTarget "MobileProvision-iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F1BFC487264D6CEDA5EA6218A45BA963 /* Debug */,
-				F814FCFB1639AE3B746E083EE56A3227 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		33459B5D3B5D2325D2AFAB968185587E /* Build configuration list for PBXNativeTarget "Pods-MobileProvisionCLI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B61FF16E4D7C3B92F0ACE21EBBC249A8 /* Debug */,
-				CFDCFC7913C1CA554FF3B03957A7D3D1 /* Release */,
+				6C69EE66AB276F3012223FBA584D1931 /* Debug */,
+				1FFC007628451AEAACCA6E4BA80177BD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -819,8 +822,26 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FF964438BF880C2F7348DC189E20431 /* Debug */,
-				0ED92D43107F612988F913F620B38C78 /* Release */,
+				274E8F527D75316D598CBB7293B01EAE /* Debug */,
+				4112C9BE65BAE60A9BD16A98752BDDAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		875424E4CDB938BC3F478A3C04A0C0C2 /* Build configuration list for PBXNativeTarget "MobileProvision-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AFD3D054E72BE95CC34FBBBDD61615C /* Debug */,
+				5A077B5FA77A587025364670DF573B0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCD1F372A0262316EFFB17EAEDCA048C /* Build configuration list for PBXNativeTarget "MobileProvision-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1E08C845857398A62CC0F40D159020B /* Debug */,
+				A40C5352F9352B66F36D841B9698DFE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -830,15 +851,6 @@
 			buildConfigurations = (
 				E3262EFC6B4BD2D7FF8FA36CB3520704 /* Debug */,
 				250CF6E5AD493A303146BE1A00262013 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0BBFA321AF2976F393B836BD87B4DFF /* Build configuration list for PBXNativeTarget "MobileProvision-macOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4F7A1F417689622432D230BD2DF77198 /* Debug */,
-				06D7BC9AA1FB659236E8764EB1C718EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
