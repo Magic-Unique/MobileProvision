@@ -102,28 +102,38 @@ static NSString *MPSHA256FromData(NSData *data) {
     return output.uppercaseString;
 }
 
-@interface MPCertificate () {
-    X509Certificate *_certificate;
-}
+@interface MPCertificate ()
+
+@property (nonatomic, strong, readonly) X509Certificate *certificate;
+
 @end
 
 @implementation MPCertificate
 
-- (instancetype)initWithX509Certificate:(X509Certificate *)certificate {
++ (instancetype)certificateWithData:(NSData *)data {
+    return [[self alloc] initWithData:data];
+}
+
+- (instancetype)initWithData:(NSData *)data {
     self = [super init];
     if (self) {
-        _certificate = certificate;
-        @try {
-            [self read];
-        } @catch (NSException *exception) {} @finally {}
+        _data = data;
     }
     return self;
 }
 
-- (void)read {
-    _version = NSData2NSUInteger(_certificate.block1.firstLeafValue) + 1;
-    _serialNumber = ({
-        NSData *data = _certificate.block1.sub[X509BlockPositionSerialNumber].value;
+@synthesize version = _version;
+- (NSInteger)version {
+    if (!_version) {
+        _version = NSData2NSUInteger(self.certificate.block1.firstLeafValue) + 1;
+    }
+    return _version;
+}
+
+@synthesize serialNumber = _serialNumber;
+- (NSString *)serialNumber {
+    if (!_serialNumber) {
+        NSData *data = self.certificate.block1.sub[X509BlockPositionSerialNumber].value;
         NSMutableString *serialNumber = [NSMutableString string];
         Byte *bytes = (Byte *)data.bytes;
         NSString *format = @"0123456789abcdef";
@@ -134,55 +144,75 @@ static NSString *MPSHA256FromData(NSData *data) {
             [serialNumber appendFormat:@"%@", [format substringWithRange:NSMakeRange(high, 1)]];
             [serialNumber appendFormat:@"%@", [format substringWithRange:NSMakeRange(low, 1)]];
         }
-        [serialNumber copy];
-    });
-    
-    _validity = [[MPValidity alloc] init];
-    _validity.notBefore = _certificate.block1.sub[X509BlockPositionDateValidity].sub[0].value;
-    _validity.notAfter = _certificate.block1.sub[X509BlockPositionDateValidity].sub[1].value;
-    
-    _issuer = ({
+        _serialNumber = [serialNumber copy];
+    }
+    return _serialNumber;
+}
+
+@synthesize validity = _validity;
+- (MPValidity *)validity {
+    if (!_validity) {
+        _validity = [[MPValidity alloc] init];
+        _validity.notBefore = self.certificate.block1.sub[X509BlockPositionDateValidity].sub[0].value;
+        _validity.notAfter = self.certificate.block1.sub[X509BlockPositionDateValidity].sub[1].value;
+    }
+    return _validity;
+}
+
+@synthesize issuer = _issuer;
+- (MPOrganization *)issuer {
+    if (!_issuer) {
         NSMutableDictionary *names = [NSMutableDictionary dictionary];
-        ASN1Node *subject = _certificate.block1.sub[X509BlockPositionIssuer];
+        ASN1Node *subject = self.certificate.block1.sub[X509BlockPositionIssuer];
         for (ASN1Node *sub in subject.sub) {
             NSString *OID = sub.firstLeafValue;
             NSString *name = [self issuerWithOID:OID];
             names[OID] = name;
         }
-        [[MPOrganization alloc] initWithJSON:names];
-    });
-    
-    _subject = ({
+        _issuer = [[MPOrganization alloc] initWithJSON:names];
+    }
+    return _issuer;
+}
+
+@synthesize subject = _subject;
+- (MPOrganization *)subject {
+    if (!_subject) {
         NSMutableDictionary *names = [NSMutableDictionary dictionary];
-        ASN1Node *subject = _certificate.block1.sub[X509BlockPositionSubject];
+        ASN1Node *subject = self.certificate.block1.sub[X509BlockPositionSubject];
         for (ASN1Node *sub in subject.sub) {
             NSString *OID = sub.firstLeafValue;
             NSString *name = [self subjectNameWithOID:OID];
             names[OID] = name;
         }
-        [[MPOrganization alloc] initWithJSON:names];
-    });
-    
-    _signature = _certificate.asn1[0].sub[2].value;
-    
-    _name = self.subject.name;
-    
-    _fingerprints = [[MPFingerprints alloc] init];
-    _fingerprints.SHA1 = MPSHA1FromData(self.data);
-    _fingerprints.SHA256 = MPSHA256FromData(self.data);
+        _subject = [[MPOrganization alloc] initWithJSON:names];
+    }
+    return _subject;
 }
 
-+ (instancetype)certificateWithData:(NSData *)data {
-    X509Certificate *certificate = nil;
-    @try {
-        certificate = [X509Certificate certificateWithData:data];
-    } @catch (NSException *exception) {} @finally {}
-    
-    if (certificate) {
-        return [[self alloc] initWithX509Certificate:certificate];
-    } else {
-        return nil;
+@synthesize signature = _signature;
+- (NSData *)signature {
+    if (!_signature) {
+        _signature = self.certificate.asn1[0].sub[2].value;
     }
+    return _signature;
+}
+
+@synthesize name = _name;
+- (NSString *)name {
+    if (!_name) {
+        _name = self.subject.name;
+    }
+    return _name;
+}
+
+@synthesize fingerprints = _fingerprints;
+- (MPFingerprints *)fingerprints {
+    if (!_fingerprints) {
+        _fingerprints = [[MPFingerprints alloc] init];
+        _fingerprints.SHA1 = MPSHA1FromData(self.data);
+        _fingerprints.SHA256 = MPSHA256FromData(self.data);
+    }
+    return _fingerprints;
 }
 
 - (BOOL)isValid {
@@ -197,19 +227,15 @@ static NSString *MPSHA256FromData(NSData *data) {
 }
 
 - (NSString *)issuerWithOID:(NSString *)OID {
-    ASN1Node *subject = _certificate.block1.sub[X509BlockPositionIssuer];
+    ASN1Node *subject = self.certificate.block1.sub[X509BlockPositionIssuer];
     ASN1Node *find = [subject findOID:OID];
     return find.parent.sub.lastObject.value;
 }
 
 - (NSString *)subjectNameWithOID:(NSString *)OID {
-    ASN1Node *subject = _certificate.block1.sub[X509BlockPositionSubject];
+    ASN1Node *subject = self.certificate.block1.sub[X509BlockPositionSubject];
     ASN1Node *find = [subject findOID:OID];
     return find.parent.sub.lastObject.value;
-}
-
-- (NSData *)data {
-    return _certificate.data;
 }
 
 - (NSDictionary *)JSON {
@@ -227,6 +253,16 @@ static NSString *MPSHA256FromData(NSData *data) {
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"<%@:%p %@>", [self class], self, self.JSON];
+}
+
+@synthesize certificate = _certificate;
+- (X509Certificate *)certificate {
+    if (!_certificate) {
+        @try {
+            _certificate = [X509Certificate certificateWithData:self.data];
+        } @catch (NSException *exception) {} @finally {}
+    }
+    return _certificate;
 }
 
 @end

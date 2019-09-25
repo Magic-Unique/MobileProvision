@@ -103,6 +103,19 @@ MPCertificate *certificate = provision.DeveloperCertificates.firstObject;
 (NSString *)certificate.fingerprints.SHA256;
 ```
 
+## Get Type
+
+   Type     | get-task-allow | beta-reports-active | Devices | All Device
+:----------:|:--------------:|:-------------------:|:-------:|:---------:
+development |       1        |          0          |  Array  |     0
+   adhoc    |       0        |          0          |  Array  |     0
+  appstore  |       0        |          1          |   nil   |     0
+  inhouse   |       0        |          0          |   nil   |     1
+
+```objc
+(MPProvisionType)provision.type;
+```
+
 ## Previews
 
 ![](Resources/preview-ios.png)

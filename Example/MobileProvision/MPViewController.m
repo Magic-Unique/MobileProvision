@@ -257,11 +257,15 @@ static LDCodeSignItem *LDCodeSignMakeItem(NSString *title, NSString *value) {
             LDCodeSignItem *provisionInfo = self.deviceInfos[indexPath.row];
             NSString *title = provisionInfo.title;
             cell.textLabel.text = title;
+#ifdef __IPHONE_13_0
             if (@available(iOS 13.0, *)) {
                 cell.backgroundColor = indexPath.row % 2 ? [UIColor secondarySystemBackgroundColor] : [UIColor tertiarySystemBackgroundColor];
             } else {
                 cell.backgroundColor = indexPath.row % 2 ? [UIColor colorWithWhite:0.96 alpha:1] : [UIColor whiteColor];
             }
+#else
+            cell.backgroundColor = indexPath.row % 2 ? [UIColor colorWithWhite:0.96 alpha:1] : [UIColor whiteColor];
+#endif
             return cell;
         } else {
             UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ALL_DEVICE"];

@@ -76,19 +76,6 @@
         SetVar(UUID);
 #undef SetVar
         _ProvisionsAllDevices = [dictionary[@"ProvisionsAllDevices"] boolValue];
-        _DeveloperCertificates = ({
-            NSArray<NSData *> *datas = dictionary[@"DeveloperCertificates"];
-            NSMutableArray *certs = nil;
-            if (datas) {
-                certs = [NSMutableArray arrayWithCapacity:datas.count];
-                [datas enumerateObjectsUsingBlock:^(NSData * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-                    MPCertificate *cert = [MPCertificate certificateWithData:obj];
-                    [certs addObject:cert];
-                }];
-            }
-            [certs copy];
-        });
-        _Entitlements = [MPEntitlements entitlementsWithDictionary:dictionary[@"Entitlements"]];
         _TimeToLive = [dictionary[@"TimeToLive"] unsignedIntegerValue];
         _Version = [dictionary[@"Version"] unsignedIntegerValue];
         _JSON = dictionary;
@@ -98,6 +85,31 @@
 
 - (NSString *)description {
     return [NSString stringWithFormat:@"<%@:%p %@>", [self class], self, self.JSON];
+}
+
+@synthesize DeveloperCertificates = _DeveloperCertificates;
+- (NSArray<MPCertificate *> *)DeveloperCertificates {
+    if (!_DeveloperCertificates) {
+        NSArray<NSData *> *datas = self.JSON[@"DeveloperCertificates"];
+        if (datas) {
+            NSMutableArray *certs = nil;
+            certs = [NSMutableArray arrayWithCapacity:datas.count];
+            for (NSData *data in datas) {
+                MPCertificate *cert = [MPCertificate certificateWithData:data];
+                [certs addObject:cert];
+            }
+            _DeveloperCertificates = [certs copy];
+        }
+    }
+    return _DeveloperCertificates;
+}
+
+@synthesize Entitlements = _Entitlements;
+- (MPEntitlements *)Entitlements {
+    if (!_Entitlements) {
+        _Entitlements = [MPEntitlements entitlementsWithDictionary:self.JSON[@"Entitlements"]];
+    }
+    return _Entitlements;
 }
 
 @end
