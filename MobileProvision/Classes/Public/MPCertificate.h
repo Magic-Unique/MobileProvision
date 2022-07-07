@@ -67,3 +67,10 @@
 - (BOOL)isValid:(NSDate *)date;
 
 @end
+
+
+@interface MPCertificate (OCSP)
+
+@property (nonatomic, strong, readonly) NSData *serialNumberData;
+
+@end

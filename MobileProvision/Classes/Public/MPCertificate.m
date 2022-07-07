@@ -266,3 +266,12 @@ static NSString *MPSHA256FromData(NSData *data) {
 }
 
 @end
+
+@implementation MPCertificate (OCSP)
+
+- (NSData *)serialNumberData {
+    return self.certificate.block1.sub[X509BlockPositionSerialNumber].value;
+}
+
+@end
+
